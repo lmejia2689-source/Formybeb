@@ -29,7 +29,15 @@
     "Ok fine, I will stop asking...",
     "Just kidding, say yes please! ❤️",
   ];
-  
+
+  function resetNoLabelSoon() {
+  setTimeout(() => {
+    if (!unlocked && messageIndex < messages.length - 1) {
+      noBtn.textContent = "No";
+    }
+  }, 900); // how long the message stays (ms) — change if you want
+}
+
   const replacementGifUrl =
     "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2I5dDlyeHZrd2I5ZWoyMjJhcDhicjBkdDMweGdvOTJqa203d2NuayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ROp9DLlKBVmlet2ocr/giphy.gif";
   
