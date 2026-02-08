@@ -27,7 +27,7 @@ const messages = [
   "I will be very sad...",
   "I will be very very very depresso...",
   "Ok fine, I will stop asking...",
-  "Just kidding, say yes please! ❤️",
+  "Just kidding, say yes pls! ❤️",
 ];
 
 const replacementGifUrl =
