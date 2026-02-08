@@ -1,0 +1,42 @@
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+
+.yes-button {
+  font-size: 1.5em;
+  padding: 0.6em 1.2em;   /* scales nicely when font grows */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+/* Make No text wrap nicely and keep style consistent */
+.no-button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  max-width: 320px;
+  white-space: normal;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.hint {
+  margin-top: 14px;
+  font-size: 14px;
+  opacity: 0.85;
+  min-height: 18px; /* prevents page jumping */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Percepeus, will you be my valentine?</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Percepeus, will you be my valentine?</h1>
+
+    <div class="buttons" id="buttons">
+      <button class="yes-button" id="yesBtn" onclick="handleYesClick()">Yes</button>
+      <button class="no-button" id="noBtn" onclick="handleNoClick()">No</button>
+    </div>
+
+    <p id="hint" class="hint"></p>
+
+    <!-- MAIN GIF (this one gets replaced on the last message) -->
+    <div class="gif_container">
+      <img
+        id="mainGif"
+        src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzBsNzZ0dm93cWV1M2cyMWJlMDAzaDRjMGNscHU4aWgyd3p5ajI4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wvYNSqBAMDVx8CEYkt/giphy.gif"
+        alt="Cute GIF"
+      />
+    </div>
+
+    <!-- OPTIONAL: keep this hidden if you still want it for something else -->
+    <div class="gif_container" id="extraGif" style="display:none;">
+      <img
+        src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2I5dDlyeHZrd2I5ZWoyMjJhcDhicjBkdDMweGdvOTJqa203d2NuayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ROp9DLlKBVmlet2ocr/giphy.gif"
+        alt="Extra GIF"
+      />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

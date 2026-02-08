@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knew you would say yes!</title>
+  <link rel="stylesheet" href="./yes_style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- STEP 1 -->
+    <div id="step1">
+      <h1 class="header_text">yayyyy happy girl!</h1>
+      <p class="love_text">i love you</p>
+
+      <div class="gif_container">
+        <img
+          src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmo3c3l5ODh3ZGN6NHhhaDE2Mjg1ZjkwOXczdDFxbWM3dTBtaW9zaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/9XY4f3FgFTT4QlaYqa/giphy.gif"
+          alt="Yay gif"
+        />
+      </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div id="step2" style="display:none;">
+      <h1 class="header_text">uno beso</h1>
+
+      <div class="gif_container">
+        <img
+          src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXZsZ2ttZGFicHB0MDhqcjBpNjJkZnhlY3BpYnhxdnNtZDZ5dm12eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MDJ9IbxxvDUQM/giphy.gif"
+          alt="Kiss gif"
+        />
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div id="step3" style="display:none;">
+      <h1 class="header_text" style="margin-top: 18px;">fyi this was me</h1>
+
+      <div class="gif_container">
+        <img
+          src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ200ZHNnZDVmaGVqY2Y2bGVkZ21tZTBrczg0NW1xZGUzMDZmaGdxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/P8ef3Dkynk0xLx1h1T/giphy.gif"
+          alt="Funny gif"
+        />
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const step1 = document.getElementById("step1");
+    const step2 = document.getElementById("step2");
+    const step3 = document.getElementById("step3");
+
+    // GIF durations (ms) — tweak if you want
+    const step1Duration = 3600; // yay gif
+    const step2Duration = 3200; // kiss gif
+
+    setTimeout(() => {
+      step1.style.display = "none";
+      step2.style.display = "block";
+
+      setTimeout(() => {
+        step2.style.display = "none";
+        step3.style.display = "block";
+      }, step2Duration);
+
+    }, step1Duration);
+  </script>
+</body>
+</html>
