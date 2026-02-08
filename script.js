@@ -62,7 +62,7 @@ function showHintOnce() {
   hint.textContent = "follow along for the bit";
   setTimeout(() => {
     if (!unlocked) hint.textContent = "";
-  }, 1600);
+  }, 1950);
 }
 
 function ensureYesIsFixedAtCurrentSpot() {
