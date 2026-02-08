@@ -1,57 +1,58 @@
-body{
+body {
   margin: 0;
   background-color: #f9e3e3;
   font-family: Arial, sans-serif;
 
-  /* better than height:100vh */
+  /* better centering */
   min-height: 100vh;
-
-  /* center content */
   display: flex;
   justify-content: center;
   align-items: center;
 
-  /* give breathing room */
+  /* so it doesn't stick to the edges */
   padding: 40px 16px;
   box-sizing: border-box;
 }
 
-.container{
+.container {
   text-align: center;
   width: 100%;
   max-width: 760px;
 }
 
-h1{
+h1 {
   font-size: 2.5em;
   color: #d32f2f;
   margin: 0 0 18px;
 }
 
-.buttons{
-  margin-top: 10px;
+.buttons {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 16px;
 }
 
-.yes-button{
+/* keep your exact Yes styling */
+.yes-button {
   font-size: 1.5em;
-  padding: 0.6em 1.2em;
+  padding: 10px 20px;
+  margin-right: 10px;
   background-color: #4caf50;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.no-button{
+/* keep your exact No styling */
+.no-button {
   font-size: 1.5em;
-  padding: 0.6em 1.2em;
+  padding: 10px 20px;
   background-color: #f44336;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
 
   max-width: 320px;
@@ -60,18 +61,17 @@ h1{
   text-align: center;
 }
 
-.hint{
+.hint {
   margin-top: 14px;
   font-size: 14px;
   opacity: 0.85;
   min-height: 18px;
 }
 
-.gif_container img{
+.gif_container img {
   width: 100%;
-  max-width: 520px;   /* keeps it from taking over the page */
+  max-width: 520px;
   height: auto;
   border-radius: 10px;
   margin-top: 20px;
 }
-
