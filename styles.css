@@ -34,31 +34,32 @@ h1 {
 }
 
 .yes-button {
-  font-size: 1.8em;
-  padding: 14px 28px;
+  font-size: 1.6em;
+  padding: 12px 24px;
   background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  min-width: 140px;
+  min-width: 120px;
 }
 
 .no-button {
-  font-size: 1.8em;
-  padding: 14px 28px;
+  font-size: 1.6em;
+  padding: 12px 24px;
   background-color: #f44336;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
 
-  min-width: 140px;
+  min-width: 120px;
   max-width: 360px;
   white-space: normal;
   line-height: 1.15;
   text-align: center;
 }
+
 
 
 .hint {
