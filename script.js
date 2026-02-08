@@ -53,7 +53,7 @@ function resetNoLabelSoon() {
     if (!unlocked && messageIndex < messages.length - 1) {
       noBtn.textContent = "No";
     }
-  }, 900);
+  }, 1500);
 }
 
 function showHintOnce() {
