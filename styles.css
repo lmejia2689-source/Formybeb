@@ -72,7 +72,7 @@ h1 {
 
 .gif_container img {
   width: 100%;
-  max-width: 520px;
+  max-width: 850px;   /* was 520px */
   height: auto;
   border-radius: 10px;
   margin-top: 20px;
