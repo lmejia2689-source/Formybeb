@@ -1,26 +1,77 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+body{
   margin: 0;
   background-color: #f9e3e3;
   font-family: Arial, sans-serif;
-  flex-direction: column;
+
+  /* better than height:100vh */
+  min-height: 100vh;
+
+  /* center content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* give breathing room */
+  padding: 40px 16px;
+  box-sizing: border-box;
 }
 
-.container {
+.container{
+  text-align: center;
+  width: 100%;
+  max-width: 760px;
+}
+
+h1{
+  font-size: 2.5em;
+  color: #d32f2f;
+  margin: 0 0 18px;
+}
+
+.buttons{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.yes-button{
+  font-size: 1.5em;
+  padding: 0.6em 1.2em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.no-button{
+  font-size: 1.5em;
+  padding: 0.6em 1.2em;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  max-width: 320px;
+  white-space: normal;
+  line-height: 1.15;
   text-align: center;
 }
 
-h1 {
-  font-size: 2.5em;
-  color: #d32f2f;
+.hint{
+  margin-top: 14px;
+  font-size: 14px;
+  opacity: 0.85;
+  min-height: 18px;
 }
 
-.gif_container img {
-  max-width: 100%;
+.gif_container img{
+  width: 100%;
+  max-width: 520px;   /* keeps it from taking over the page */
   height: auto;
   border-radius: 10px;
   margin-top: 20px;
 }
+
