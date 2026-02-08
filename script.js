@@ -20,7 +20,6 @@ const mainGif = document.getElementById("mainGif"); // make sure index.html has 
 const messages = [
   "Are you sure beb?",
   "Really sure??",
-  "Are you positive?",
   "Bebs please...",
   "Just think about it!",
   "If you say no, I will be really sad...",
